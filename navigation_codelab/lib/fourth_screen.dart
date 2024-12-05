@@ -6,7 +6,7 @@ class FourthScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Fourth Screen'),
+        title: const Text('Fourth Screen'),
         // Menampilkan judul "Fourth Screen" di AppBar.
         backgroundColor: Colors.purple,
         // Mengatur warna latar belakang AppBar menjadi ungu.
@@ -16,13 +16,13 @@ class FourthScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           // Menempatkan elemen kolom di tengah layar secara vertikal.
           children: [
-            Text(
+            const Text(
               'This is the Fourth Screen',
               // Menampilkan teks "This is the Fourth Screen".
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               // Mengatur gaya teks menjadi tebal dengan ukuran font 20.
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             // Memberikan jarak vertikal sebesar 20 piksel antara teks dan tombol.
             ..._buildPageButtons(context),
             // Memanggil fungsi `_buildPageButtons` untuk membuat daftar tombol navigasi ke layar lain.
@@ -81,11 +81,11 @@ class FourthScreen extends StatelessWidget {
 
   List<BottomNavigationBarItem> _buildBottomNavItems() {
     return [
-      BottomNavigationBarItem(icon: Icon(Icons.looks_one), label: 'Screen 1'),
-      BottomNavigationBarItem(icon: Icon(Icons.looks_two), label: 'Screen 2'),
-      BottomNavigationBarItem(icon: Icon(Icons.looks_3), label: 'Screen 3'),
-      BottomNavigationBarItem(icon: Icon(Icons.looks_4), label: 'Screen 4'),
-      BottomNavigationBarItem(icon: Icon(Icons.looks_5), label: 'Screen 5'),
+      const BottomNavigationBarItem(icon: Icon(Icons.looks_one), label: 'Screen 1'),
+      const BottomNavigationBarItem(icon: Icon(Icons.looks_two), label: 'Screen 2'),
+      const BottomNavigationBarItem(icon: Icon(Icons.looks_3), label: 'Screen 3'),
+      const BottomNavigationBarItem(icon: Icon(Icons.looks_4), label: 'Screen 4'),
+      const BottomNavigationBarItem(icon: Icon(Icons.looks_5), label: 'Screen 5'),
     ];
     // Membuat daftar item navigasi bawah dengan ikon dan label yang sesuai untuk setiap layar.
   }
