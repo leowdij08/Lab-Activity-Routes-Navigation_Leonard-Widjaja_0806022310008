@@ -16,7 +16,7 @@ class WelcomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Welcome Page'), 
+        title: const Text('Welcome Page'), 
         // Menampilkan judul pada AppBar dengan teks 'Welcome Page'.
         backgroundColor: Colors.blue, 
         // Mengatur warna latar belakang AppBar menjadi biru.
@@ -27,13 +27,13 @@ class WelcomePage extends StatelessWidget {
           // Mengatur elemen pada kolom agar terpusat secara vertikal di tengah layar.
 
           children: [
-            Text(
+            const Text(
               'Welcome to the Navigation App!', 
               // Menampilkan teks sambutan di bagian atas halaman.
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold), 
               // Mengatur ukuran teks dan membuatnya tebal (bold).
             ),
-            SizedBox(height: 20), 
+            const SizedBox(height: 20), 
             // Menambahkan jarak vertikal sebesar 20 piksel di bawah teks sambutan.
 
             ...routes.map((route) { 
@@ -47,7 +47,7 @@ class WelcomePage extends StatelessWidget {
                   // Navigasi ke rute yang ditentukan saat tombol ditekan menggunakan `Navigator.pushNamed`.
 
                   style: ElevatedButton.styleFrom(
-                    fixedSize: Size(200, 50), 
+                    fixedSize: const Size(200, 50), 
                     // Mengatur ukuran tombol tetap dengan lebar 200 piksel dan tinggi 50 piksel.
                     backgroundColor: Colors.blue, 
                     // Mengatur warna latar belakang tombol menjadi biru.
@@ -55,7 +55,7 @@ class WelcomePage extends StatelessWidget {
                   child: Text(
                     route['name']!, 
                     // Menampilkan nama tombol berdasarkan nilai `name` dari elemen `routes`.
-                    style: TextStyle(color: Colors.white), 
+                    style: const TextStyle(color: Colors.white), 
                     // Mengatur warna teks tombol menjadi putih.
                   ),
                 ),
