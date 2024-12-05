@@ -37,4 +37,4 @@ Pastikan Anda memiliki:
 ### Langkah Instalasi
 1. Clone atau unduh repository:
    ```bash
-   git clone https://github.com/username/flutter-multi-screen-app.git
+   git clone https://github.com/leowdij08/Lab-Activity-Routes-Navigation_Leonard-Widjaja_0806022310008.git
